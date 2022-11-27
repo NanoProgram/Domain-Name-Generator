@@ -6,21 +6,27 @@ import "./assets/img/rigo-baby.jpg";
 import "./assets/img/4geeks.ico";
 
 window.onload = function() {
-  //write your code here
-  console.log("Hello Rigo from the console!");
+  for (let i = 0; i < pronoun.length; i++) {
+    for (let j = 0; j < adj.length; j++) {
+      for (let x = 0; x < noun.length; x++) {
+        for (let z = 0; z < domain.length; z++) {
+          console.log(pronoun[i] + adj[j] + noun[x] + domain[z]);
+        }
+      }
+    }
+  }
 };
 
 let pronoun = ["The", "Our"];
-let adj = ["Great", "Big"];
-let noun = ["Jogger", "Racoon"];
+let adj = ["mighty", "monstrous", "stinky", "smooth"];
+let noun = ["thor", "gamer", "player", "cat"];
+let domain = [".com", ".cl", ".org", ".gob"];
 
+/* Constructo del nested loop
 for (let i = 0; i < pronoun.length; i++) {
-  console.log(pronoun[i]);
-}
-
-for (let i = 0; i < adj.length; i++) {
-  console.log(adj[i]);
-}
-for (let i = 0; i < noun.length; i++) {
-  console.log(noun[i]);
-}
+  for (let j = 0; j < adj.length; j++) {
+    for (let x = 0; x < noun.length; x++) {
+      console.log(pronoun[i] + adj[j] + noun[x]);
+    }
+  }
+}*/
